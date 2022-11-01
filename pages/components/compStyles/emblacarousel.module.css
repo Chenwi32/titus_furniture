@@ -1,0 +1,99 @@
+.embla {
+  overflow: hidden;
+  width: 100%;
+
+  box-shadow: 0 5px 5px  0 rgba(0, 0, 0, 0.123);
+  margin-top: 4.5rem;
+  margin-bottom: 3rem;
+}
+
+.embla__container {
+display: flex;
+}
+
+.embla__slide2,
+.embla__slide3,
+.embla__slide{
+  width: 100%;
+  height: fit-content;
+  min-height: 85vh;
+  max-height: 85vh;
+  position: relative;
+  flex: 0 0 100%;
+  font-size: 1.5rem;
+  color: var(--complementry-color);
+  padding: 1em;
+   
+}
+
+.embla__slide3{
+  background-color: var(--complementry-color);
+  color: var(--secondary-color);
+}
+.embla__slide_container {
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0;
+  align-items: center;
+}
+
+
+
+
+
+.carousel_text p{
+  margin-bottom: 2rem;
+}
+
+.image{
+  height: 70%;
+  width: fit-content;
+  margin: auto;
+}
+
+.carousel_text1 {
+  justify-content: flex-start;
+  padding: 1rem;
+ font-size: 1rem;
+  min-height: 60vh;
+  width: 100%;
+  height: fit-content;
+  margin: 2em 1em 0;
+  justify-content: flex-start;
+
+  align-items: flex-start;
+}
+
+
+@media (max-width: 700px){
+.embla {
+    margin-top: 2.5rem;
+}
+  .embla__slide_container {
+display: block;
+position: relative;
+padding: 0;
+
+}
+
+.image {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+
+.carousel_text {
+  position: absolute;
+  z-index: 1;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: rgba(49, 49, 49, 0.11);
+
+  min-height: 60vh;
+  width: 95%;
+  height: fit-content;
+  top: 1rem;
+  left: .4rem;
+}
+}

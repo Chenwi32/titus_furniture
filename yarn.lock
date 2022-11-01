@@ -1685,6 +1685,23 @@
   "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.284.tgz"
   "version" "1.4.284"
 
+"embla-carousel-autoplay@^7.0.4":
+  "integrity" "sha512-N0pRlqf0GxDvnXnWTx/rQOXePa/5l4lii5LAhNCzCSP0Qoj1APln8eGYzpCwkJ6m4Vc75lpnM+y37R9CaBm7Dg=="
+  "resolved" "https://registry.npmjs.org/embla-carousel-autoplay/-/embla-carousel-autoplay-7.0.4.tgz"
+  "version" "7.0.4"
+
+"embla-carousel-react@^7.0.4":
+  "integrity" "sha512-pSnxrvsLMt3TwVS8uqYMZGfJvRLy+3rcg3JOImVDgvNEtEbbzXoL8tR34Dph6Jh38e/Z9IZW7jVX0igu/haLyQ=="
+  "resolved" "https://registry.npmjs.org/embla-carousel-react/-/embla-carousel-react-7.0.4.tgz"
+  "version" "7.0.4"
+  dependencies:
+    "embla-carousel" "7.0.4"
+
+"embla-carousel@7.0.4":
+  "integrity" "sha512-2/EO9Zh6yT1EiTNkCUhbYfAqe6PVODSYFZQxTeuLGFYYNTKTkHvalfuFVIdEDmtxbbGepuYtLqCmk6yzJfJeyw=="
+  "resolved" "https://registry.npmjs.org/embla-carousel/-/embla-carousel-7.0.4.tgz"
+  "version" "7.0.4"
+
 "emoji-regex@^9.2.2":
   "integrity" "sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg=="
   "resolved" "https://registry.npmjs.org/emoji-regex/-/emoji-regex-9.2.2.tgz"
@@ -2853,7 +2870,7 @@
     "invariant" "^2.2.4"
     "tslib" "^2.0.0"
 
-"react@^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18.0.0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.8 || ^17.0.0 || ^18.0.0", "react@>=16.8.0", "react@>=18", "react@18.2.0":
+"react@^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18.0.0", "react@^18.1.0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.8 || ^17.0.0 || ^18.0.0", "react@>=16.8.0", "react@>=18", "react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
