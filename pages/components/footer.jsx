@@ -26,10 +26,13 @@ const Footer = () => {
               color={"brand.900"}
               _hover={{ backgroundColor: "#2a69ac" }}
             >
-              <a href="https://wa.me/+237670502777" target="_blank">
+              <a
+                href="https://wa.me/+237670502777"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faWhatsapp} />
               </a>
-              
             </Button>
 
             <span>Instagram</span>

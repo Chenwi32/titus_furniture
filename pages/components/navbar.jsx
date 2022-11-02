@@ -17,24 +17,24 @@ const Navbar = () => {
   const [isLargerThan730] = useMediaQuery("(min-width: 730px)"); 
 
   return (
-    <Box
-   
-      width="100%"
-      boxShadow="md"
-      zIndex={1}
-      bg="brand.900"
-    >
+    <Box width="100%" boxShadow="md" zIndex={1} bg="brand.900">
       <Container maxW={900} padding="0.5rem">
         <chakra.header id="header">
           <Stack
-            direction={isLargerThan730? "row": "column" }
+            direction={isLargerThan730 ? "row" : "column"}
             spacing="24px"
             align="center"
             justify="space-between"
           >
             {/* <Flex w="100%" py="1"  "> */}
             <Link href="/">
-              <Image src="/logo.png" height={100} width={200} minW='150px' alt="TF logo" />
+              <Image
+                src="/logo.png"
+                height={100}
+                width={200}
+                minW="150px"
+                alt="TF logo"
+              />
             </Link>
 
             <Stack
@@ -63,7 +63,11 @@ const Navbar = () => {
                 </Text>
 
                 <Text>
-                  <a href="https://wa.me/+237670502777" target="_blank">
+                  <a
+                    href="https://wa.me/+237670502777"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Whatsapp
                   </a>
                 </Text>
@@ -103,7 +107,7 @@ const Navbar = () => {
                     Cart
                   </Button>
                 </Link>
-                
+
                 <Link href="/help">&#x2753;</Link>
               </Flex>
             </Stack>
