@@ -12,7 +12,7 @@ const EmblaCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
-      speed: 10,
+      speed: 20,
     },
     [Autoplay({ delay: 5000, stopOnInteraction: false })]
   );
@@ -30,7 +30,7 @@ const EmblaCarousel = () => {
       height={"fit-content"}
       p={0}
       margin={0}
-      mt={"4rem"}
+      mt={"3rem"}
       maxW={1200}
       display={"flex"}
     >
@@ -41,7 +41,8 @@ const EmblaCarousel = () => {
             width={"100%"}
             height={600}
             alt="flower vase"
-            objectFit={"contain"}
+            objectFit={"fill"}
+            
           />
         </div>
 
@@ -51,7 +52,7 @@ const EmblaCarousel = () => {
             width={"100%"}
             height={600}
             alt="flower vase"
-            objectFit={"contain"}
+            objectFit={"fill"}
           />
         </div>
 
@@ -61,7 +62,7 @@ const EmblaCarousel = () => {
             width={"100%"}
             height={600}
             alt="flower vase"
-            objectFit={"contain"}
+            objectFit={"fill"}
           />
         </div>
 
@@ -71,7 +72,7 @@ const EmblaCarousel = () => {
             width={"100%"}
             height={600}
             alt="flower vase"
-            objectFit={"contain"}
+            objectFit={"fill"}
           />
         </div>
       </Flex>
