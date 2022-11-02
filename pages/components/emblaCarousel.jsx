@@ -6,7 +6,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 import styles from "./compStyles/emblacarousel.module.css";
 import Link from "next/link";
-import { Image } from "@chakra-ui/react";
+import { Box, Container, Flex, Image } from "@chakra-ui/react";
 
 const EmblaCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -24,80 +24,58 @@ const EmblaCarousel = () => {
   }, [emblaApi]);
 
   return (
-    <div className={styles.embla} ref={emblaRef}>
-      <div className={`${styles.embla__container}`}>
+    <Box
+      overflow={"hidden"}
+      ref={emblaRef}
+      height={"fit-content"}
+      p={0}
+      margin={0}
+      mt={"4rem"}
+      maxW={1200}
+      display={"flex"}
+    >
+      <Flex>
         <div className={`${styles.embla__slide} `}>
-          <div className={`${styles.embla__slide_container} container flex`}>
-            
-            <div className={styles.image}>
-              <Image
-                src="images/tv_stand2.jpg"
-                width={400}
-                height={600}
-                alt="flower vase"
-              />
-            </div>
-          </div>
+          <Image
+            src="images/tv_stand2.jpg"
+            width={"100%"}
+            height={600}
+            alt="flower vase"
+            objectFit={"contain"}
+          />
         </div>
 
-        <div className={`${styles.embla__slide2} `}>
-          <div className={`${styles.embla__slide_container} container flex`}>
-            
-            <div className={styles.image}>
-              <Image
-                src="/images/tv_stand.jpg"
-                width={400}
-                height={500}
-                alt="flower vase"
-              />
-            </div>
-          </div>
+        <div className={`${styles.embla__slide} `}>
+          <Image
+            src="/images/tv_stand.jpg"
+            width={"100%"}
+            height={600}
+            alt="flower vase"
+            objectFit={"contain"}
+          />
         </div>
 
-        <div className={`${styles.embla__slide2} `}>
-          <div className={`${styles.embla__slide_container} container flex`}>
-            
-            <div className={styles.image}>
-              <Image
-                src="/images/stools.jpg"
-                width={400}
-                height={500}
-                alt="flower vase"
-              />
-            </div>
-          </div>
+        <div className={`${styles.embla__slide} `}>
+          <Image
+            src="/images/stand_set.jpg"
+            width={"100%"}
+            height={600}
+            alt="flower vase"
+            objectFit={"contain"}
+          />
         </div>
 
-        <div className={`${styles.embla__slide2} `}>
-          <div className={`${styles.embla__slide_container} container flex`}>
-            
-            <div className={styles.image}>
-              <Image
-                src="/images/stand_set.jpg"
-                width={400}
-                height={500}
-                alt="flower vase"
-              />
-            </div>
-          </div>
+        <div className={`${styles.embla__slide} `}>
+          <Image
+            src="/images/pantry.jpg"
+            width={"100%"}
+            height={600}
+            alt="flower vase"
+            objectFit={"contain"}
+          />
         </div>
-
-        <div className={`${styles.embla__slide2} `}>
-          <div className={`${styles.embla__slide_container} container flex`}>
-            
-            <div className={styles.image}>
-              <Image
-                src="/images/pantry.jpg"
-                width={400}
-                height={500}
-                alt="flower vase"
-              />
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
+      </Flex>
+    </Box>
   );
 };
 
