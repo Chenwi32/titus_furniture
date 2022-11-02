@@ -10,8 +10,12 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.3.6",
+    "@chakra-ui/theme-tools": "^2.0.12",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "embla-carousel-autoplay": "^7.0.4",
     "embla-carousel-react": "^7.0.4",
     "framer-motion": "^6.5.1",

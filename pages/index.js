@@ -2,6 +2,7 @@ import { Container } from '@chakra-ui/react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import EmblaCarousel from './components/emblaCarousel'
+import Shopmenu from './components/shopmenu'
 
 export default function Home() {
   return (
@@ -13,7 +14,11 @@ export default function Home() {
       </Head>}
 
       <Container padding={0} margin={'auto'} maxW={1200}>
-        <EmblaCarousel /> 
+        <EmblaCarousel />
+        
+        <Shopmenu />
+        
+        
       </Container>
 
 
