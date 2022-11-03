@@ -1,0 +1,27 @@
+.embla {
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+.embla__container {
+  display: flex;
+  width: fit-content;
+}
+
+.embla__slide {
+  width: 30%;
+  height: fit-content;
+  flex: 0 0 40%;
+  font-size: 1.5rem;
+  color: var(--complementry-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+margin: .5rem;
+border-radius: 5px;
+}
+
+
+@media (max-width: 700px) {
+
+
+}

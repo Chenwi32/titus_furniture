@@ -2,6 +2,8 @@ import { Box, Button, Container, Flex, Heading, Text, useMediaQuery } from "@cha
 import Head from "next/head";
 
 import EmblaCarousel from "./components/emblaCarousel";
+import Feedback from "./components/feedback";
+import Scope from "./components/scope";
 import Shopmenu from "./components/shopmenu";
 
 export default function Home() {
@@ -28,9 +30,10 @@ export default function Home() {
             padding={isLargerThan400 ? 10 : 5}
             pt={isLargerThan900 ? 28 : 10}
             flexDirection={"column"}
+            w='100%'
           >
-            <Heading mb={10} fontSize={isLargerThan400 ? "2rem" : "1.5rem"}>
-              Make Your Own Custom Design. and Let Us Handle the rest
+            <Heading mb={10} fontSize={isLargerThan400 ? "3rem" : "1.5rem"}>
+              Make Your Own Custom Design.
             </Heading>
 
             <Text mb={10}>
@@ -56,6 +59,11 @@ export default function Home() {
         </Flex>
 
         <Shopmenu />
+
+        <Scope />
+        
+        <Feedback/>
+
       </Container>
     </>
   );

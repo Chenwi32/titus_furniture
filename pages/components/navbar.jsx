@@ -19,7 +19,7 @@ const Navbar = () => {
   const [isLargerThan400] = useMediaQuery("(min-width: 400px)"); 
 
   return (
-    <Box width="100%" boxShadow="md" zIndex={1} bg="brand.900">
+    <Box width="100%" boxShadow={"lg"} zIndex={1} bg="brand.900">
       <Container maxW={900} padding="0.5rem">
         <chakra.header id="header">
           <Stack
