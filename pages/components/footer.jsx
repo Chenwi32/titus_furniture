@@ -24,7 +24,7 @@ const Footer = () => {
               bottom={28}
               bg={"brand.800"}
               color={"brand.900"}
-              _hover={{ backgroundColor: "#2a69ac" }}
+              _hover={{ backgroundColor: "#4fa883" }}
             >
               <a
                 href="https://wa.me/+237670502777"
