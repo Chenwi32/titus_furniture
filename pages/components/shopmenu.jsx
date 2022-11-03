@@ -8,6 +8,7 @@ import {
   Text,
   useMediaQuery,
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 const Shopmenu = () => {
   const [isLargerThan950] = useMediaQuery("(min-width: 950px)");
@@ -71,13 +72,15 @@ const Shopmenu = () => {
           transition={"0.5s"}
           _hover={{ transform: "translateY(-0.5rem)" }}
         >
-          <Flex direction={"column"}>
-            <Image src="/images/bed_room.jpg" h={"150px"} />
+          <Link href="/bed_room">
+            <Flex direction={"column"}>
+              <Image src="/images/bed_room.jpg" h={"150px"} />
 
-            <Text mt={2} textAlign={"center"} fontWeight={"600"}>
-              Bedroom
-            </Text>
-          </Flex>
+              <Text mt={2} textAlign={"center"} fontWeight={"600"}>
+                Bedroom
+              </Text>
+            </Flex>
+          </Link>
         </Box>
 
         <Box
