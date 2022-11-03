@@ -1,6 +1,6 @@
 import { Box, Button, Container, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+
 import EmblaCarousel from "./components/emblaCarousel";
 import Shopmenu from "./components/shopmenu";
 
@@ -30,7 +30,7 @@ export default function Home() {
             </Heading>
 
             <Text mb={10}>
-              Bring whatever design you've come up with and let us handle the
+              Bring whatever design you have come up with and let us handle the
               rest for your
             </Text>
             <Button
