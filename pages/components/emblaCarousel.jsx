@@ -22,7 +22,6 @@ const EmblaCarousel = () => {
     }
   }, [emblaApi]);
 
-  const [isLargerThan400] = useMediaQuery("(min-width: 400px)");
 
   return (
     <Box
@@ -33,7 +32,7 @@ const EmblaCarousel = () => {
       margin={0}
       mt={"3rem"}
       maxW={1200}
-      w={isLargerThan400 ? '95%' : "90%"}
+      w={'95%'}
       m="auto"
       display={"flex"}
     >
