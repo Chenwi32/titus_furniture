@@ -5,16 +5,15 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
 import styles from "./compStyles/emblacarousel.module.css";
-import Link from "next/link";
-import { Box, Container, Flex, Image } from "@chakra-ui/react";
+import { Box, Flex, Image, useMediaQuery } from "@chakra-ui/react";
 
 const EmblaCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
-      speed: 20,
+      speed: 40,
     },
-    [Autoplay({ delay: 5000, stopOnInteraction: false })]
+    [Autoplay({ delay: 7000, stopOnInteraction: false })]
   );
 
   useEffect(() => {
@@ -22,6 +21,8 @@ const EmblaCarousel = () => {
       // Embla API is ready
     }
   }, [emblaApi]);
+
+  const [isLargerThan400] = useMediaQuery("(min-width: 400px)");
 
   return (
     <Box
@@ -32,6 +33,8 @@ const EmblaCarousel = () => {
       margin={0}
       mt={"3rem"}
       maxW={1200}
+      w={isLargerThan400 ? '95%' : "90%"}
+      m="auto"
       display={"flex"}
     >
       <Flex>
@@ -42,7 +45,6 @@ const EmblaCarousel = () => {
             height={600}
             alt="flower vase"
             objectFit={"fill"}
-            
           />
         </div>
 

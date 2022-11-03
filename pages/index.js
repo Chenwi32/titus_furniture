@@ -20,13 +20,16 @@ export default function Home() {
       }
 
       <Container padding={0} margin={"auto"} maxW={1200}>
-        <Flex direction={isLargerThan900 ? "row" : "column"}>
+        <Flex
+          direction={isLargerThan900 ? "row" : "column"}
+          fontSize={isLargerThan400 ? "1rem" : "0.8rem"}
+        >
           <Flex
             padding={isLargerThan400 ? 10 : 5}
             pt={isLargerThan900 ? 28 : 10}
             flexDirection={"column"}
           >
-            <Heading mb={10}>
+            <Heading mb={10} fontSize={isLargerThan400 ? "2rem" : "1.5rem"}>
               Make Your Own Custom Design. and Let Us Handle the rest
             </Heading>
 
@@ -38,7 +41,7 @@ export default function Home() {
               bg={"brand.800"}
               color={"brand.900"}
               padding={isLargerThan400 ? "2rem" : 4}
-              fontSize={isLargerThan400 ? "1rem" : '0.9rem'}
+              fontSize={isLargerThan400 ? "1rem" : "0.9rem"}
               w={"fit-content"}
               borderRadius={"30px"}
               boxShadow={"lg"}
