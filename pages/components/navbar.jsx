@@ -16,6 +16,8 @@ const Navbar = () => {
 
   const [isLargerThan730] = useMediaQuery("(min-width: 730px)"); 
 
+  const [isLargerThan400] = useMediaQuery("(min-width: 400px)"); 
+
   return (
     <Box width="100%" boxShadow="md" zIndex={1} bg="brand.900">
       <Container maxW={900} padding="0.5rem">
@@ -26,7 +28,6 @@ const Navbar = () => {
             align="center"
             justify="space-between"
           >
-            {/* <Flex w="100%" py="1"  "> */}
             <Link href="/">
               <Image
                 src="/logo.png"
@@ -48,7 +49,7 @@ const Navbar = () => {
                 justifyContent={"center"}
                 bg="brand.800"
                 color={"brand.900"}
-                w={320}
+                w={isLargerThan400 ? 320 : "100%"}
                 padding={"1rem"}
               >
                 <Text>

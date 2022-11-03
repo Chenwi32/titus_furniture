@@ -7,6 +7,7 @@ import Shopmenu from "./components/shopmenu";
 export default function Home() {
 
   const [isLargerThan900] = useMediaQuery("(min-width: 900px)");
+  const [isLargerThan400] = useMediaQuery("(min-width: 400px)");
 
   return (
     <>
@@ -21,7 +22,7 @@ export default function Home() {
       <Container padding={0} margin={"auto"} maxW={1200}>
         <Flex direction={isLargerThan900 ? "row" : "column"}>
           <Flex
-            padding={10}
+            padding={isLargerThan400 ? 10 : 5}
             pt={isLargerThan900 ? 28 : 10}
             flexDirection={"column"}
           >
