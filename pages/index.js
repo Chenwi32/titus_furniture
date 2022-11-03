@@ -37,8 +37,8 @@ export default function Home() {
             <Button
               bg={"brand.800"}
               color={"brand.900"}
-              padding={isLargerThan400 ? "2rem" : 3}
-              fontSize={isLargerThan400 ? "1rem" : '0.7rem'}
+              padding={isLargerThan400 ? "2rem" : 4}
+              fontSize={isLargerThan400 ? "1rem" : '0.9rem'}
               w={"fit-content"}
               borderRadius={"30px"}
               boxShadow={"lg"}
