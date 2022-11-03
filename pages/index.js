@@ -40,7 +40,7 @@ export default function Home() {
             <Button
               bg={"brand.800"}
               color={"brand.900"}
-              padding={isLargerThan400 ? "2rem" : 4}
+              padding={isLargerThan400 ? "2rem" : '1.7rem 1.5rem'}
               fontSize={isLargerThan400 ? "1rem" : "0.9rem"}
               w={"fit-content"}
               borderRadius={"30px"}
