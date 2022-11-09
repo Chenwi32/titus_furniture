@@ -75,6 +75,7 @@ const Navbar = () => {
               </Flex>
 
               <Flex align={"center"}>
+                
                 <Link href="">
                   <Button
                     mr={"1rem"}
@@ -83,31 +84,10 @@ const Navbar = () => {
                     color="brand.400"
                     _hover="brand.500"
                   >
-                    Contact Us
+                    About Us
                   </Button>
                 </Link>
-                <Link href="">
-                  <Button
-                    mr={"1rem"}
-                    padding={0}
-                    bg="brand.100"
-                    color="brand.400"
-                    _hover="brand.500"
-                  >
-                    About
-                  </Button>
-                </Link>
-                <Link href="">
-                  <Button
-                    mr={"1rem"}
-                    padding={0}
-                    bg="brand.100"
-                    color="brand.400"
-                    _hover="brand.500"
-                  >
-                    Cart
-                  </Button>
-                </Link>
+               
 
                 <Link href="/help">&#x2753;</Link>
               </Flex>

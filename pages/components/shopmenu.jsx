@@ -36,13 +36,16 @@ const Shopmenu = () => {
           transition={"0.5s"}
           _hover={{ transform: "translateY(-0.5rem)" }}
         >
-          <Flex direction={"column"}>
+          <Link href="/livingroom">
+            <Flex direction={"column"}>
             <Image src="/images/living_room.jpg" h={"150px"} />
 
             <Text mt={2} textAlign={"center"} fontWeight={"600"}>
               Living Room
             </Text>
           </Flex>
+          </Link>
+          
         </Box>
 
         <Box
@@ -54,13 +57,16 @@ const Shopmenu = () => {
           transition={"0.5s"}
           _hover={{ transform: "translateY(-0.5rem)" }}
         >
-          <Flex direction={"column"}>
+          <Link href="/diningroom">
+            <Flex direction={"column"}>
             <Image src="/images/dining_room.jpg" h={"150px"} />
 
             <Text mt={2} textAlign={"center"} fontWeight={"600"}>
               Dining Room
             </Text>
           </Flex>
+          </Link>
+          
         </Box>
 
         <Box
@@ -92,31 +98,16 @@ const Shopmenu = () => {
           transition={"0.5s"}
           _hover={{ transform: "translateY(-0.5rem)" }}
         >
-          <Flex direction={"column"}>
+          <Link href="/homeoffice">
+            <Flex direction={"column"}>
             <Image src="/images/home_office.jpg" h={"150px"} />
 
             <Text mt={2} textAlign={"center"} fontWeight={"600"}>
               Home Office
             </Text>
           </Flex>
-        </Box>
-
-        <Box
-          boxShadow={"rgb(203 198 244) 8px 8px 0px;"}
-          w={isLargerThan400 ? 170 : "90%"}
-          m="auto"
-          height={200}
-          border={" 2px solid #AF4920 "}
-          transition={"0.5s"}
-          _hover={{ transform: "translateY(-0.5rem)" }}
-        >
-          <Flex direction={"column"}>
-            <Image src="/images/office.jpg" h={"150px"} />
-
-            <Text mt={2} textAlign={"center"} fontWeight={"600"}>
-              Office
-            </Text>
-          </Flex>
+          </Link>
+          
         </Box>
       </SimpleGrid>
     </Container>
