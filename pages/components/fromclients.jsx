@@ -38,7 +38,7 @@ const Fromclients = () => {
         <div className={`${styles.embla__slide} `}>
             <Image
               src="/images/cieling.jpg"
-              width={"100%"}
+              width={'100%'}
               height={200}
               alt="flower vase"
             />
