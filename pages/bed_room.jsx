@@ -45,8 +45,7 @@ const BedRoom = () => {
       { url: "https://i.ibb.co/18ZDLJ0/bed16.png" },
       { url: "https://i.ibb.co/r4f3fcS/bed15.jpg" },
       { url: "https://i.ibb.co/Js1HJcF/bed13.jpg" },
-      { url: "https://i.ibb.co/18ZDLJ0/bed16.png" },
-      { url: "https://i.ibb.co/r4f3fcS/bed15.jpg" },
+      { url: "https://i.ibb.co/1qSwtx0/bed20.jpg" },
     ],
   };
 
@@ -83,19 +82,106 @@ const BedRoom = () => {
             border={" 2px solid #6D9886 "}
             overflow="hidden"
           >
-            <Flex direction={"column"}>
-              <Image
-                src="/images/bed1.png"
-                h={"230px"}
-                transition={"0.5s"}
-                _hover={{ transform: "scale(1.1)" }}
-                onClick={onOpen}
-              />
-
-              <Text mt={2} textAlign={"center"} fontWeight={"600"}>
-                Bed One
-              </Text>
-            </Flex>
+            <Image
+              src="/images/bed2.png"
+              h={"100%"}
+              transition={"0.5s"}
+              _hover={{ transform: "scale(1.01)" }}
+              onClick={() => {
+                setimageNum(0);
+                onOpen();
+              }}
+            />
+          </Box>
+          <Box
+            w={isLargerThan400 ? 250 : "90%"}
+            m="auto"
+            height={300}
+            border={" 2px solid #6D9886 "}
+            overflow="hidden"
+          >
+            <Image
+              src="/images/bed4.png"
+              h={"100%"}
+              transition={"0.5s"}
+              _hover={{ transform: "scale(1.01)" }}
+              onClick={() => {
+                setimageNum(3);
+                onOpen();
+              }}
+            />
+          </Box>
+          <Box
+            w={isLargerThan400 ? 250 : "90%"}
+            m="auto"
+            height={300}
+            border={" 2px solid #6D9886 "}
+            overflow="hidden"
+          >
+            <Image
+              src="/images/bed14.png"
+              h={"100%"}
+              transition={"0.5s"}
+              _hover={{ transform: "scale(1.01)" }}
+              onClick={() => {
+                setimageNum(10);
+                onOpen();
+              }}
+            />
+          </Box>
+          <Box
+            w={isLargerThan400 ? 250 : "90%"}
+            m="auto"
+            height={300}
+            border={" 2px solid #6D9886 "}
+            overflow="hidden"
+          >
+            <Image
+              src="/images/bed6.png"
+              h={"100%"}
+              transition={"0.5s"}
+              _hover={{ transform: "scale(1.01)" }}
+              onClick={() => {
+                setimageNum(8);
+                onOpen();
+              }}
+            />
+          </Box>
+          <Box
+            w={isLargerThan400 ? 250 : "90%"}
+            m="auto"
+            height={300}
+            border={" 2px solid #6D9886 "}
+            overflow="hidden"
+          >
+            <Image
+              src="/images/bed7.png"
+              h={"100%"}
+              transition={"0.5s"}
+              _hover={{ transform: "scale(1.01)" }}
+              onClick={() => {
+                setimageNum(9);
+                onOpen();
+              }}
+            />
+          </Box>
+          <Box
+            w={isLargerThan400 ? 250 : "90%"}
+            m="auto"
+            height={300}
+            border={" 2px solid #6D9886 "}
+            overflow="hidden"
+          >
+            <Image
+              src="/images/bed8.png"
+              h={"100%"}
+              transition={"0.5s"}
+              _hover={{ transform: "scale(1.01)" }}
+              onClick={() => {
+                setimageNum(12);
+                onOpen();
+              }}
+            />
           </Box>
 
           <Box
@@ -105,18 +191,16 @@ const BedRoom = () => {
             border={" 2px solid #6D9886 "}
             overflow="hidden"
           >
-            <Flex direction={"column"}>
-              <Image
-                src="/images/bed2.png"
-                h={"230px"}
-                transition={"0.5s"}
-                _hover={{ transform: "scale(1.1)" }}
-              />
-
-              <Text mt={2} textAlign={"center"} fontWeight={"600"}>
-                Bed Two
-              </Text>
-            </Flex>
+            <Image
+              src="/images/bed15.png"
+              h={"100%"}
+              transition={"0.5s"}
+              _hover={{ transform: "scale(1.01)" }}
+              onClick={() => {
+                setimageNum(14);
+                onOpen();
+              }}
+            />
           </Box>
 
           <Box
@@ -124,21 +208,18 @@ const BedRoom = () => {
             m="auto"
             height={300}
             border={" 2px solid #6D9886 "}
-            transition={"0.5s"}
             overflow="hidden"
           >
-            <Flex direction={"column"}>
-              <Image
-                src="/images/bed3.png"
-                h={"230px"}
-                transition={"0.5s"}
-                _hover={{ transform: "scale(1.1)" }}
-              />
-
-              <Text mt={2} textAlign={"center"} fontWeight={"600"}>
-                Bed Three
-              </Text>
-            </Flex>
+            <Image
+              src="/images/bed13.png"
+              h={"100%"}
+              transition={"0.5s"}
+              _hover={{ transform: "scale(1.01)" }}
+              onClick={() => {
+                setimageNum(15);
+                onOpen();
+              }}
+            />
           </Box>
         </SimpleGrid>
 
@@ -158,8 +239,9 @@ const BedRoom = () => {
                 <Image
                   src={imagescontainer.bed1[imageNum].url}
                   alt="bed"
-                  width={"100%"}
+                  width={"90%"}
                   height={"60vh"}
+                  margin="auto"
                 />
               </Flex>
               <Button
@@ -194,6 +276,22 @@ const BedRoom = () => {
             <ModalFooter>
               <Button colorScheme="blue" mr={3} onClick={onClose}>
                 Close
+              </Button>
+
+              <Button
+                mr={3}
+                color="brand.900"
+                bg="brand.800"
+                _hover={{ backgroundColor: "#4fa883" }}
+              >
+                <a
+                  href="https://wa.me/+237670502777"
+                  target="_blank"
+                  rel="noreferrer"
+                  _hover={'text-decoration: none'}
+                >
+                  Get In Touch
+                </a>
               </Button>
             </ModalFooter>
           </ModalContent>
