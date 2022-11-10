@@ -53,14 +53,12 @@ const Navbar = () => {
                 padding={"1rem"}
               >
                 <Text>
-                  <a href="mailto:chenwieugene.j@gmail.com">
-                    chenwieugene.j@gmail.com
-                  </a>
+                  <a href="ofembbetitus@gmail.com">ofembbetitus@gmail.com</a>
                 </Text>
 
                 <Text fontWeight={600}>
                   <a href="tel:+237670502777">+237670502777</a> /{" "}
-                  <a href="tel:+237651395832">+237651395832</a>
+                  <a href="tel:+237653043060">+237653043060</a>
                 </Text>
 
                 <Text>
@@ -75,7 +73,6 @@ const Navbar = () => {
               </Flex>
 
               <Flex align={"center"}>
-                
                 <Link href="/about">
                   <Button
                     mr={"1rem"}
@@ -87,7 +84,6 @@ const Navbar = () => {
                     About Us
                   </Button>
                 </Link>
-               
 
                 {/* <Link href="/help">&#x2753;</Link> */}
               </Flex>
