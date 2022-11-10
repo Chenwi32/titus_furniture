@@ -73,22 +73,47 @@ const [isLargerThan950] = useMediaQuery("(min-width: 950px)");
 
       {
         id: 8,
-        url: "https://i.ibb.co/wprF6kv/livingroom9.jpg",
+        url: "https://i.ibb.co/8XwP5XJ/livingroom14.png",
       },
 
       {
         id: 9,
-        url: "https://i.ibb.co/2trNYRM/livingroom6.png",
+        url: "https://i.ibb.co/wprF6kv/livingroom9.jpg",
       },
 
       {
         id: 10,
-        url: "https://i.ibb.co/YRgyknb/livingroom15.png",
+        url: "https://i.ibb.co/2trNYRM/livingroom6.png",
       },
 
       {
         id: 11,
-        url: "https://i.ibb.co/8XwP5XJ/livingroom14.png",
+        url: "https://i.ibb.co/YRgyknb/livingroom15.png",
+      },
+
+      {
+        id: 12,
+        url: "https://i.ibb.co/bN59hJh/stools.jpg",
+      },
+
+      {
+        id: 13,
+        url: "https://i.ibb.co/4WHdCTj/tvstand2.jpg",
+      },
+
+      {
+        id: 14,
+        url: "https://i.ibb.co/1bLh6rN/tvstand1.jpg",
+      },
+
+      {
+        id: 15,
+        url: "https://i.ibb.co/FKLHzkF/tv-stand2.jpg",
+      },
+
+      {
+        id: 16,
+        url: "https://i.ibb.co/BCfcn0h/tv-stand.jpg",
       },
     ],
   };
