@@ -42,7 +42,7 @@ const EmblaCarousel = () => {
             src="images/tv_stand2.jpg"
             width={"100%"}
             height={600}
-            alt="flower vase"
+            alt="Furniture"
             objectFit={"fill"}
           />
         </div>
@@ -52,7 +52,7 @@ const EmblaCarousel = () => {
             src="/images/tv_stand.jpg"
             width={"100%"}
             height={600}
-            alt="flower vase"
+            alt="Furniture"
             objectFit={"fill"}
           />
         </div>
@@ -62,7 +62,7 @@ const EmblaCarousel = () => {
             src="/images/stand_set.jpg"
             width={"100%"}
             height={600}
-            alt="flower vase"
+            alt="Furniture"
             objectFit={"fill"}
           />
         </div>
@@ -72,7 +72,7 @@ const EmblaCarousel = () => {
             src="/images/pantry.jpg"
             width={"100%"}
             height={600}
-            alt="flower vase"
+            alt="Furniture"
             objectFit={"fill"}
           />
         </div>

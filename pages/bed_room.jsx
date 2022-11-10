@@ -140,7 +140,7 @@ return (
     }
 
     <Container maxW={1200} mt={10} mb={10}>
-      <Breadcrm/>
+      <Breadcrm />
       <Heading mb={10} textAlign={"center"}>
         Make Your Living room a leisure place with any of these sets.
       </Heading>
@@ -163,6 +163,7 @@ return (
             <Image
               src={image.url}
               h={"100%"}
+              alt="furniture images"
               transition={"0.5s"}
               _hover={{ transform: "scale(1.01)" }}
               onClick={() => {

@@ -7,7 +7,7 @@ const Footer = () => {
     const [isLargerThan730] = useMediaQuery("(min-width: 730px)");
 
     return (
-      <Container maxW={1200}>
+      <Container maxW={1200} bg={'#000'} color={'brand.900'} padding={'1.5rem'}>
         <Flex justify="space-between" align="center">
           <Stack direction={isLargerThan730 ? "row" : "column"} spacing="24px">
             <span>Facebook</span>

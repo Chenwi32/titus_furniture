@@ -81,6 +81,7 @@ const Homeoffice = () => {
                     setimageNum(image.id);
                     onOpen();
                   }}
+                  alt="furniture images"
                 />
               </Box>
             ))}
@@ -101,7 +102,7 @@ const Homeoffice = () => {
                 <Flex>
                   <Image
                     src={imagescontainer.imageurl[imageNum].url}
-                    alt="bed"
+                    alt="office accessories"
                     width={"90%"}
                     height={"60vh"}
                     margin="auto"

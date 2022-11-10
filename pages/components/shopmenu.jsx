@@ -38,14 +38,17 @@ const Shopmenu = () => {
         >
           <Link href="/livingroom">
             <Flex direction={"column"}>
-            <Image src="/images/living_room.jpg" h={"150px"} />
+              <Image
+                src="/images/living_room.jpg"
+                h={"150px"}
+                alt="furniture images"
+              />
 
-            <Text mt={2} textAlign={"center"} fontWeight={"600"}>
-              Living Room
-            </Text>
-          </Flex>
+              <Text mt={2} textAlign={"center"} fontWeight={"600"}>
+                Living Room
+              </Text>
+            </Flex>
           </Link>
-          
         </Box>
 
         <Box
@@ -59,14 +62,17 @@ const Shopmenu = () => {
         >
           <Link href="/diningroom">
             <Flex direction={"column"}>
-            <Image src="/images/dining_room.jpg" h={"150px"} />
+              <Image
+                src="/images/dining_room.jpg"
+                h={"150px"}
+                alt="furniture images"
+              />
 
-            <Text mt={2} textAlign={"center"} fontWeight={"600"}>
-              Dining Room
-            </Text>
-          </Flex>
+              <Text mt={2} textAlign={"center"} fontWeight={"600"}>
+                Dining Room
+              </Text>
+            </Flex>
           </Link>
-          
         </Box>
 
         <Box
@@ -80,7 +86,11 @@ const Shopmenu = () => {
         >
           <Link href="/bed_room">
             <Flex direction={"column"}>
-              <Image src="/images/bed_room.jpg" h={"150px"} />
+              <Image
+                src="/images/bed_room.jpg"
+                h={"150px"}
+                alt="furniture images"
+              />
 
               <Text mt={2} textAlign={"center"} fontWeight={"600"}>
                 Bedroom
@@ -100,14 +110,17 @@ const Shopmenu = () => {
         >
           <Link href="/homeoffice">
             <Flex direction={"column"}>
-            <Image src="/images/home_office.jpg" h={"150px"} />
+              <Image
+                src="/images/home_office.jpg"
+                h={"150px"}
+                alt="furniture images"
+              />
 
-            <Text mt={2} textAlign={"center"} fontWeight={"600"}>
-              Home Office
-            </Text>
-          </Flex>
+              <Text mt={2} textAlign={"center"} fontWeight={"600"}>
+                Home Office
+              </Text>
+            </Flex>
           </Link>
-          
         </Box>
       </SimpleGrid>
     </Container>

@@ -1,6 +1,6 @@
 import { Container, Heading, Text } from "@chakra-ui/react";
 import Head from "next/head";
-import VideoPlayer from "./components/videoPlayer";
+
 
 const About = () => {
   return (
@@ -29,7 +29,6 @@ const About = () => {
           Watch a technichian at work
         </Heading>
 
-        <VideoPlayer />
       </Container>
     </>
   );

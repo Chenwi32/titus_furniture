@@ -89,7 +89,7 @@ const Navbar = () => {
                 </Link>
                
 
-                <Link href="/help">&#x2753;</Link>
+                {/* <Link href="/help">&#x2753;</Link> */}
               </Flex>
             </Stack>
           </Stack>

@@ -150,7 +150,7 @@ const [isLargerThan950] = useMediaQuery("(min-width: 950px)");
       }
 
       <Container maxW={1200} mt={10} mb={10}>
-        <Breadcrm/>
+        <Breadcrm />
         <Heading mb={10} textAlign={"center"}>
           Make Your Living room a leisure place with any of these sets.
         </Heading>
@@ -161,27 +161,28 @@ const [isLargerThan950] = useMediaQuery("(min-width: 950px)");
           spacing={isLargerThan700 ? "24px" : "1.5rem"}
           margin={"auto"}
         >
-          {imagescontainer.imageurl.map((image) => 
-              <Box
-                w={isLargerThan700 ? 250 : "95%"}
-                m="auto"
-                height={300}
-                border={" 2px solid #6D9886 "}
+          {imagescontainer.imageurl.map((image) => (
+            <Box
+              w={isLargerThan700 ? 250 : "95%"}
+              m="auto"
+              height={300}
+              border={" 2px solid #6D9886 "}
               overflow="hidden"
               key={image.id}
-              >
-                <Image
-                  src={image.url}
-                  h={"100%"}
-                  transition={"0.5s"}
-                  _hover={{ transform: "scale(1.01)" }}
-                  onClick={() => {
-                    setimageNum(image.id);
-                    onOpen();
-                  }}
-                />
-              </Box>)}
-
+            >
+              <Image
+                src={image.url}
+                h={"100%"}
+                alt="furniture images"
+                transition={"0.5s"}
+                _hover={{ transform: "scale(1.01)" }}
+                onClick={() => {
+                  setimageNum(image.id);
+                  onOpen();
+                }}
+              />
+            </Box>
+          ))}
         </SimpleGrid>
 
         {/* Image Viewer */}
@@ -199,7 +200,7 @@ const [isLargerThan950] = useMediaQuery("(min-width: 950px)");
               <Flex>
                 <Image
                   src={imagescontainer.imageurl[imageNum].url}
-                  alt="bed"
+                  alt="living room accesories"
                   width={"90%"}
                   height={"60vh"}
                   margin="auto"

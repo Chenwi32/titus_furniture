@@ -93,7 +93,7 @@ const Diningroom = () => {
       }
 
       <Container maxW={1200} mt={10} mb={10}>
-        <Breadcrm/>
+        <Breadcrm />
         <Heading mb={10} textAlign={"center"}>
           Have a peasurable feeling during your meals
         </Heading>
@@ -116,6 +116,7 @@ const Diningroom = () => {
               <Image
                 src={image.url}
                 h={"100%"}
+                alt="furniture images"
                 transition={"0.5s"}
                 _hover={{ transform: "scale(1.01)" }}
                 onClick={() => {
@@ -142,7 +143,7 @@ const Diningroom = () => {
               <Flex>
                 <Image
                   src={imagescontainer.imageurl[imageNum].url}
-                  alt="bed"
+                  alt="dining room accessories"
                   width={"90%"}
                   height={"60vh"}
                   margin="auto"
