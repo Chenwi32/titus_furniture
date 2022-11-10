@@ -115,6 +115,21 @@ const [isLargerThan950] = useMediaQuery("(min-width: 950px)");
         id: 16,
         url: "https://i.ibb.co/BCfcn0h/tv-stand.jpg",
       },
+
+      {
+        id: 17,
+        url: "https://i.ibb.co/D1g1VXB/livingroom22.png",
+      },
+
+      {
+        id: 18,
+        url: "https://i.ibb.co/qM6n7gT/livingroom20.png",
+      },
+
+      {
+        id: 19,
+        url: "https://i.ibb.co/QDZ2W3D/livingroom21.png",
+      },
     ],
   };
 
@@ -150,7 +165,8 @@ const [isLargerThan950] = useMediaQuery("(min-width: 950px)");
                 m="auto"
                 height={300}
                 border={" 2px solid #6D9886 "}
-                overflow="hidden"
+              overflow="hidden"
+              key={image.id}
               >
                 <Image
                   src={image.url}
