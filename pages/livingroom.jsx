@@ -19,6 +19,7 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import { useState } from "react";
+import Breadcrm from "./components/breadcrumb";
 
 
 const Livingroom = () => {
@@ -149,6 +150,7 @@ const [isLargerThan950] = useMediaQuery("(min-width: 950px)");
       }
 
       <Container maxW={1200} mt={10} mb={10}>
+        <Breadcrm/>
         <Heading mb={10} textAlign={"center"}>
           Make Your Living room a leisure place with any of these sets.
         </Heading>
@@ -156,12 +158,12 @@ const [isLargerThan950] = useMediaQuery("(min-width: 950px)");
           columns={
             isLargerThan950 ? 4 : isLargerThan700 ? 3 : isLargerThan400 ? 2 : 1
           }
-          spacing={isLargerThan400 ? "24px" : "2rem"}
+          spacing={isLargerThan700 ? "24px" : "1.5rem"}
           margin={"auto"}
         >
           {imagescontainer.imageurl.map((image) => 
               <Box
-                w={isLargerThan400 ? 250 : "90%"}
+                w={isLargerThan700 ? 250 : "95%"}
                 m="auto"
                 height={300}
                 border={" 2px solid #6D9886 "}

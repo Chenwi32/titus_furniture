@@ -19,6 +19,7 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import { useState } from "react";
+import Breadcrm from "./components/breadcrumb";
 
 const BedRoom = () => {
 
@@ -139,6 +140,7 @@ return (
     }
 
     <Container maxW={1200} mt={10} mb={10}>
+      <Breadcrm/>
       <Heading mb={10} textAlign={"center"}>
         Make Your Living room a leisure place with any of these sets.
       </Heading>

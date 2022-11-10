@@ -1,6 +1,8 @@
 import { Box, Button, Container, Flex, Heading, Image, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, SimpleGrid, useDisclosure, useMediaQuery } from "@chakra-ui/react";
 import Head from "next/head";
 import { useState } from "react";
+import Breadcrm from "./components/breadcrumb";
+
 
 const Homeoffice = () => {
     const [isLargerThan950] = useMediaQuery("(min-width: 950px)");
@@ -44,6 +46,7 @@ const Homeoffice = () => {
         }
 
         <Container maxW={1200} mt={10} mb={10}>
+          <Breadcrm />
           <Heading mb={10} textAlign={"center"}>
             Have a peasurable feeling during your meals
           </Heading>
@@ -66,8 +69,8 @@ const Homeoffice = () => {
                 m="auto"
                 height={300}
                 border={" 2px solid #6D9886 "}
-                    overflow="hidden"
-                    key={image.id }
+                overflow="hidden"
+                key={image.id}
               >
                 <Image
                   src={image.url}

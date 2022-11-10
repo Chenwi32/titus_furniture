@@ -18,6 +18,8 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import { useState } from "react";
+import Breadcrm from "./components/breadcrumb";
+
 
 const Diningroom = () => {
   const [isLargerThan950] = useMediaQuery("(min-width: 950px)");
@@ -91,6 +93,7 @@ const Diningroom = () => {
       }
 
       <Container maxW={1200} mt={10} mb={10}>
+        <Breadcrm/>
         <Heading mb={10} textAlign={"center"}>
           Have a peasurable feeling during your meals
         </Heading>

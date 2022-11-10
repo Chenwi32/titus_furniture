@@ -76,7 +76,7 @@ const Navbar = () => {
 
               <Flex align={"center"}>
                 
-                <Link href="">
+                <Link href="/about">
                   <Button
                     mr={"1rem"}
                     padding={0}
