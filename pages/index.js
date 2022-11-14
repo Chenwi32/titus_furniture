@@ -38,7 +38,7 @@ export default function Home() {
 
             <Text mb={10}>
               Bring whatever design you have come up with and let us handle the
-              rest for your
+              rest for your!!
             </Text>
             <Button
               bg={"brand.800"}
@@ -50,7 +50,14 @@ export default function Home() {
               boxShadow={"lg"}
               _hover={{ backgroundColor: "#4fa883" }}
             >
-              Talk To A Technichian
+              <a
+                    href="https://wa.me/+237670502777"
+                    target="_blank"
+                    rel="noreferrer"
+              >
+                Talk To A Technichian
+                  </a>
+              
             </Button>
           </Flex>
           <Box w={"100%"}>
