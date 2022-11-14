@@ -47,7 +47,7 @@ const Footer = () => {
             </span>
           </HStack>
         </Stack>
-        <Flex spacing="24px" direction={'column'}>
+        <Flex spacing="24px" mt={10} direction={'column'}>
           <Text mb={'1.5rem'}>
             Hours <br />
             

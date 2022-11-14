@@ -43,7 +43,7 @@ const Scope = () => {
       />
 
       <Heading>
-        We deliver evrywhere in the national teritory of Cameroon.
+        We deliver everywhere within the national teritory of Cameroon.
       </Heading>
     </Flex>
   );

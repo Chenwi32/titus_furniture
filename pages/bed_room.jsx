@@ -142,7 +142,8 @@ return (
     <Container maxW={1200} mt={10} mb={10}>
       <Breadcrm />
       <Heading mb={10} textAlign={"center"}>
-        Make Your Living room a leisure place with any of these sets.
+        Make Your Bedroom as comfortable and pleasant as want with any of these
+        accessories.
       </Heading>
       <SimpleGrid
         columns={
@@ -153,7 +154,7 @@ return (
       >
         {imagescontainer.imageurl.map((image) => (
           <Box
-            w={isLargerThan400 ? 250 : "90%"}
+            w={isLargerThan700 ? 250 : "95%"}
             m="auto"
             height={300}
             border={" 2px solid #6D9886 "}

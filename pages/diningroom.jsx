@@ -106,7 +106,7 @@ const Diningroom = () => {
         >
           {imagescontainer.imageurl.map((image) => (
             <Box
-              w={isLargerThan400 ? 250 : "90%"}
+              w={isLargerThan700 ? 250 : "95%"}
               m="auto"
               height={300}
               border={" 2px solid #6D9886 "}
