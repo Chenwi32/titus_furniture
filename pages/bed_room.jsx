@@ -180,22 +180,35 @@ return (
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent maxWidth={"unset"} width={"50rem"} height={"fit-content"}>
-          <ModalHeader>Modal Title</ModalHeader>
+        <ModalContent
+          maxW={"900px"}
+          p={isLargerThan700 ? 10 : 0}
+          width={"100%"}
+          height={"fit-content"}
+        >
+          <ModalHeader>Bedroom Accessories</ModalHeader>
           <ModalCloseButton />
-          <ModalBody position={"relative"}>
+          <ModalBody position={"relative"} p={0}>
             <Flex>
               <Image
                 src={imagescontainer.imageurl[imageNum].url}
                 alt="bed"
-                width={"90%"}
+                width={"100%"}
                 height={"60vh"}
                 margin="auto"
+                p={0}
               />
             </Flex>
             <Button
               position={"absolute"}
-              top={"45%"}
+              top={"0"}
+              left={0}
+              backgroundColor={"transparent"}
+              padding="11.5rem 0"
+              _hover={{
+                backgroundColor: "rgba(0, 0, 0, 0.137)",
+                color: "#fff",
+              }}
               onClick={() => {
                 if (imageNum <= 0) {
                   return;
@@ -208,8 +221,14 @@ return (
             </Button>
             <Button
               position={"absolute"}
-              top={"45%"}
-              right="1.5rem"
+              top={"0"}
+              right="0"
+              backgroundColor={"transparent"}
+              padding="11.5rem 0"
+              _hover={{
+                backgroundColor: "rgba(0, 0, 0, 0.137)",
+                color: "#fff",
+              }}
               onClick={() => {
                 if (imageNum + 1 >= imagescontainer.imageurl.length) {
                   return;
@@ -231,13 +250,14 @@ return (
               mr={3}
               color="brand.900"
               bg="brand.800"
-              _hover={{ backgroundColor: "#4fa883" }}
+              _hover={{
+                backgroundColor: "#4fa883",
+              }}
             >
               <a
                 href="https://wa.me/+237670502777"
                 target="_blank"
                 rel="noreferrer"
-                _hover={"text-decoration: none"}
               >
                 Get In Touch
               </a>

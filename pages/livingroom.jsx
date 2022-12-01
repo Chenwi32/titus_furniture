@@ -190,25 +190,33 @@ const [isLargerThan950] = useMediaQuery("(min-width: 950px)");
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent
-            maxWidth={"unset"}
-            width={"50rem"}
+            p={isLargerThan700? 10 : 0}
+            maxWidth={"900px"}
+            width={"100%"}
             height={"fit-content"}
           >
-            <ModalHeader>Modal Title</ModalHeader>
+            <ModalHeader>Living Room Accessories</ModalHeader>
             <ModalCloseButton />
-            <ModalBody position={"relative"}>
-              <Flex>
+            <ModalBody p={0} position={"relative"}>
+              <Flex >
                 <Image
                   src={imagescontainer.imageurl[imageNum].url}
                   alt="living room accesories"
-                  width={"90%"}
+                  width={"100%"}
                   height={"60vh"}
                   margin="auto"
                 />
               </Flex>
               <Button
                 position={"absolute"}
-                top={"45%"}
+                top={"0"}
+                left={0}
+                backgroundColor={"transparent"}
+                padding="11.5rem 0"
+                _hover={{
+                  backgroundColor: "rgba(0, 0, 0, 0.137)",
+                  color: "#fff",
+                }}
                 onClick={() => {
                   if (imageNum <= 0) {
                     return;
@@ -221,8 +229,14 @@ const [isLargerThan950] = useMediaQuery("(min-width: 950px)");
               </Button>
               <Button
                 position={"absolute"}
-                top={"45%"}
-                right="1.5rem"
+                top={"0"}
+                right="0"
+                backgroundColor={"transparent"}
+                padding="11.5rem 0"
+                _hover={{
+                  backgroundColor: "rgba(0, 0, 0, 0.137)",
+                  color: "#fff",
+                }}
                 onClick={() => {
                   if (imageNum + 1 >= imagescontainer.imageurl.length) {
                     return;
