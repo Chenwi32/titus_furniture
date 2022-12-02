@@ -18,7 +18,7 @@ const Shopmenu = () => {
   return (
     <Container maxW={1200} mt={10} mb={10}>
       <Heading mb={10} textAlign={"center"}>
-        Shop by Category
+        View by Category
       </Heading>
       <SimpleGrid
         columns={
