@@ -33,7 +33,7 @@ const Footer = () => {
             fontSize={"1.5rem"}
             mb={10}
           >
-            <Text>Folow us on</Text>
+            <Text>Follow us on</Text>
             <HStack spacing="24px">
               <span>
                 <FontAwesomeIcon icon={faFacebook} />
@@ -68,7 +68,7 @@ const Footer = () => {
 
             <Text fontSize={"1.5rem"}>
               Location: <br />
-              <small>Nouvelle Route Nsimeyong- Yaounde</small>
+              <small>Nouvelle Route Nsimeyong - Yaounde</small>
             </Text>
 
             <Button
@@ -105,7 +105,7 @@ const Footer = () => {
         ></Box>
 
         <Text mt={"1.5rem"}>
-          <small>Copy right. All rights reserved | Titus Furniture 2022</small>
+          <small>Copyright. All right reserved | Titus Furniture 2022</small>
         </Text>
       </Container>
     </Container>

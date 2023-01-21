@@ -55,7 +55,7 @@ export default function Home() {
                     target="_blank"
                     rel="noreferrer"
               >
-                Talk To A Technichian
+                Talk To A Technician
                   </a>
               
             </Button>

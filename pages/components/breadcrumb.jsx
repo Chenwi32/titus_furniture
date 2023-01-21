@@ -15,7 +15,7 @@ const Breadcrm = () => {
           </BreadcrumbItem>
 
           <BreadcrumbItem isCurrentPage>
-            <Link href="/bed_room">Bed Room</Link>
+            <Link href="/bed_room">Bedroom</Link>
           </BreadcrumbItem>
 
           <BreadcrumbItem isCurrentPage>

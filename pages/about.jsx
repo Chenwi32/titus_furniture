@@ -21,12 +21,12 @@ const About = () => {
           We have ready made designs, and we also do customized works, which we
           take whatever design you come up with, and make it come to life.{" "}
           <br />
-          We also do after sell services such as; installation, maintainace, and
+          We also do after sell services such as; installation, maintenace, and
           repairs.
         </Text>
 
         <Heading mb={10} mt={10}>
-          Watch a technichian at work
+          Watch a technician at work
         </Heading>
 
       </Container>

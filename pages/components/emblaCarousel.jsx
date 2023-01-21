@@ -5,7 +5,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
 import styles from "./compStyles/emblacarousel.module.css";
-import { Box, Flex, Image, useMediaQuery } from "@chakra-ui/react";
+import { Box, Flex, Image} from "@chakra-ui/react";
 
 const EmblaCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
